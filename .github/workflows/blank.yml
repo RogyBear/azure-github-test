@@ -22,5 +22,5 @@ jobs:
       env:
         AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }}
       run: |
-        git remote add azure-devops https://<organization>@dev.azure.com/<organization>/<project>/_git/<repository>
+        git remote add azure-devops https://aaron24@dev.azure.com/aaron24/test/_git/test
         git push azure-devops main
