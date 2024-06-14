@@ -3,7 +3,7 @@ name: Push to Azure DevOps
 on:
   push:
     branches:
-      - epri
+      - DEV
 
 jobs:
   push-to-azure:
