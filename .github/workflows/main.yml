@@ -13,7 +13,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
+        ref: epri 
         fetch-depth: 0  # Fetch all history for all branches and tags
+    
+    - name: Create and switch to DEV
+      run: |
+        git checkout -B DEV
 
     - name: Set up Git
       run: |
