@@ -26,4 +26,5 @@ jobs:
       run: |
         git remote add azure-devops https://aaron24:${{ secrets.AZURE_DEVOPS_PAT }}@dev.azure.com/aaron24/test/_git/test
         git checkout DEV
+        git rebase epri
         git push azure-devops DEV:DEV --force
